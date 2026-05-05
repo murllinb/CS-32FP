@@ -7,7 +7,7 @@ Dice Tic-Tac-Toe is a variation of the classic game that maintains the tradition
 At the start of the game, players select a die with fixed odds that determine special actions. Rolling the die can result in abilities such as removing one of the player’s own symbols or an opponent’s symbol from the board. This adds a new dynamic layer of gameplay to game, while also allowing for online play with the local networking system with a server and 2 clients.
 
 Instructions:
-In order to play Dice Tic-Tac-Toe, you first need to install socket32.py, dice.py, basegame_server.py, basegame_client1.py, and basegame_client2.py.
+In order to play Dice Tic-Tac-Toe, you first need to install socket32.py, dice.py, TTT_server.py, TTT_client1.py, and TTT_client2.py.
 In order to play this game, there must be 3 split terminals running.
 1. Initialize basegame_server.py in one of the terminals. 
 2. Initialize basegame_client1.py in one of the other terminals.
