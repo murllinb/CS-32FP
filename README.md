@@ -23,6 +23,10 @@ In order to play this game, there must be 3 split terminals running.
 9. Repeat steps 6-8 until there is a draw or a winner.
 10. Select whether you would like to play another round.
 
+Future Project Plans:
+There are a lot of areas that could be improved on in the game, some issues with networking like broadcasts for the waiting player to await the active player's decision could be improved on, and the overall structure could be broken down more into a cleaner formatting. Moving forward it would be best to clean the code for cleaner understanding, but also to expand on the server client codes by allowing for multiple connections to the server, potentially setting up lobbies that could be accessed by a custom password. The dice element of this game could also be expanded upon by adding more abilities to the dice, allowing for a more diverse player experience.
+
+
 Resources Used:
 * ChatGPT: Used to refine formatting issues and troubleshoot issues with server logic(i.e. find a way to clear the terminal to avoid clutter and format text to appear more visibly clear in the terminal). Commented parts where ChatGPT was used/helped.
 * Pset 3 (copied socket32.py)
