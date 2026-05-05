@@ -5,7 +5,9 @@ from dice import roll_dice_two
 from dice import roll_dice_three
 from threading import Thread 
 from socket32 import Socket32, create_new_socket
- 
+
+### Server logic provided from video for cross client communication
+
 HOST = sys.argv[1] if len(sys.argv) > 1 else "127.0.0.1"
 PORT = int(sys.argv[2]) if len(sys.argv) > 2 else 9999
 
@@ -162,9 +164,9 @@ def game_session(conns: list[Socket32], addrs: list):
         broadcast(conns, "         TIC  TAC  TOE")
         broadcast(conns, "  ================================")
 
-        broadcast(conns, "\nBeginner Dice (1): ~17% chance to replace opponent's piece, ~17% chance to lose turn, ~66% chance of nothing (place piece normally)."
-        "\nIntermediate Dice (2): 25% chance to replace opponent's piece, 25% chance to lose turn, 50% chance of nothing (place piece normally)." 
-        "\nExtreme Dice (3): 50% chance to replace opponent's piece, 50% chance to lose turn." 
+        broadcast(conns, "\nBeginner Dice (1): 1/6 odds of removing your opponents piece or your piece, 2/3 chance of nothing (place piece normally)."
+        "\nIntermediate Dice (2): 1/4 odds of removing your opponents piece or your piece, 1/2 chance of nothing (place piece normally)." 
+        "\nExtreme Dice (3): 1/2 odds of removing your opponents piece or your piece" 
             )
         broadcast(conns, "  ================================")
 
