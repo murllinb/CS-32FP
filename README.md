@@ -32,3 +32,5 @@ Resources Used:
 * Pset 3 (copied socket32.py)
 * Modified socket logic for 2 clients: https://www.youtube.com/watch?v=5G_bNVKdECk
 * Threading logic used for 2 clients: https://docs.python.org/3/library/threading.html
+
+FP Submission Video Link:
