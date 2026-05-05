@@ -8,9 +8,12 @@ from socket32 import create_new_socket
 # Request user input for where they want to put there dice
 # 
 
+### Clear terminal logic that was in the original TTT code (GAI) for possible later implementation 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
+
+### Port priority logic that was remolded to allow the clients to determine which port they need to connects to for accesing the server
 HOST = sys.argv[1] if len(sys.argv) > 1 else "127.0.0.1"
 PORT = int(sys.argv[2]) if len(sys.argv) > 2 else 9999
 
@@ -24,7 +27,7 @@ def server_message (conn, stop_event: threading.Event):
                 break
             print(message, end="", flush=True)
 
-def main(): ### Bulk of logic here Chat helped write to define start and stop events with threading (especially daemon logic)
+def main(): ### Bulk of logic here GAI helped write to define start and stop events with threading (especially daemon logic)
     with create_new_socket() as conn:
         try:
             conn.connect(HOST, PORT)
